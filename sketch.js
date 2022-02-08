@@ -4,12 +4,13 @@ var angle = 0;
 var slider;
 function setup() {
     createCanvas(windowWidth, windowHeight);
-    slider =  createSlider(0, PI / 2, PI / 4, 0.01);
+   
   }
   
+  let value = 0;
   function draw() {
     background(51);
-    angle = slider.value();
+    angle = map (mouseX , 0, windowWidth, 0, PI /2);
     stroke(70, 40, 20);
 
     translate(windowWidth/2, height/2);
@@ -21,10 +22,22 @@ function setup() {
        }
       
   }
-  
 
-  
 
+  //Click any point of the screen
+  //the value of the ellipse
+  //after the mouse has been clicked
+  function mouseClicked(_branch) {
+    if (value === 0) {
+      value = 255;
+    } else {
+      value = 0;
+      value = 225; 102; 179;
+      value = 255; 255; 25;
+      value = 255, 144; 110;
+      noStroke();
+    }
+  }
 
  function branch(len) {
     line(0, 0, 0, -len);
@@ -42,16 +55,29 @@ function setup() {
         pop();
     
    
-    }else{
-    var r = 70 + random(-20, 20);
-    var g = 200 + random(-20, 20);
-    var b = 40 + random(-20, 20);
+    }
+    else{
+    var r = 0 + random(-20, 200);
+    var g = 0 + random(-20, 200);
+    var b = 10 + random(-20, 200);
     fill(r, g, b);
     noStroke()
     ellipse(0, 0, 10);
     }
     
   } 
+
+
+  
+
+    
+  
+ 
+    
+
+
+
+
     
     
   
