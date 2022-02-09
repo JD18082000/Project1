@@ -4,13 +4,14 @@ var angle = 0;
 var slider;
 function setup() {
     createCanvas(windowWidth, windowHeight);
+    alert('Fractal Tree Snowflake: mouse drag Horizontal to expand the snowflake, mouse drag to Center to close the Snowflake.')
    
   }
   
   let value = 0;
   function draw() {
     background(51);
-    angle = map (mouseX , 0, windowWidth, 0, PI /2);
+    angle = map (mouseX, 0, windowHeight, 0, PI /2);
     stroke(70, 40, 20);
 
     translate(windowWidth/2, height/2);
@@ -23,23 +24,8 @@ function setup() {
       
   }
 
-
-  //Click any point of the screen
-  //the value of the ellipse
-  //after the mouse has been clicked
-  function mouseClicked(_branch) {
-    if (value === 0) {
-      value = 255;
-    } else {
-      value = 0;
-      value = 225; 102; 179;
-      value = 255; 255; 25;
-      value = 255, 144; 110;
-      noStroke();
-    }
-  }
-
- function branch(len) {
+  
+  function branch(len) {
     line(0, 0, 0, -len);
     translate(0, -len);
     if (len > 10) {
@@ -53,22 +39,21 @@ function setup() {
         rotate (-angle);
         branch (len * 0.74);
         pop();
+        
     
    
     }
-    else{
+    else{    
     var r = 0 + random(-20, 200);
     var g = 0 + random(-20, 200);
-    var b = 10 + random(-20, 200);
-    fill(r, g, b);
+    var b = 0 + random(-20, 200);
+    fill(r, g, b)
     noStroke()
     ellipse(0, 0, 10);
     }
     
-  } 
+  }
 
-
-  
 
     
   
