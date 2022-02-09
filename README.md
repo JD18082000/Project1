@@ -1,2 +1,2 @@
 # hello-world
-This is my Project 1 description:"#  Project1" 
+This is my Project 1 description: The Fractal Snowflake contains the four trees that spread out in four main directions: North, East, South,and West. The color effect are randomized, to emulate the noise effectl the gray background create canvas for the snowflake to express freely. The further the snowflake, the center yield a snowflake shape, each distinguishable branch of the tree appear as well. The overall snowflake is inspired from my fascination with kaleidoscope effect, often I seen in movie and music video.
