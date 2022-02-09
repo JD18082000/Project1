@@ -4,7 +4,8 @@ var angle = 0;
 var slider;
 function setup() {
     createCanvas(windowWidth, windowHeight);
-    alert('Fractal Tree Snowflake: mouse drag Horizontal to expand the snowflake, mouse drag to Center to close the Snowflake.')
+    alert('Fractal Tree Snowflake: mouse drag Horizontal to expand the snowflake, the further left of mouse dragged the more the snowflake expanded. Further to the right, the snowflake begins to close.')
+
    
   }
   
